@@ -1,0 +1,29 @@
+###
+GET http://localhost:4000/api/tasks
+
+###
+POST http://localhost:4000/api/tasks
+Content-Type: application/json
+
+{
+    "title": "Hacer un sitio web en cecer",
+    "description": "trabajo freelance",
+    "done": true
+}
+
+###
+GET http://localhost:4000/api/tasks/634606010160829613eb33e5
+
+###
+DELETE http://localhost:4000/api/tasks/6345fbf67b92f99cea4f9195
+
+###
+GET http://localhost:4000/api/tasks/done
+
+###
+PUT http://localhost:4000/api/tasks/634606010160829613eb33e5
+Content-Type: application/json
+
+{
+    "title": "Hacer un sitio web en wix"
+}
